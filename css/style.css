@@ -550,6 +550,10 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     .text-white {
         color: var(--white-color);
     }
+    
+    .text-orange {
+        color: var(--link-hover-font-color);
+    }
     /*!*  Spacer* ----------------------------------------------- */
     
     .mr-auto,
@@ -1812,7 +1816,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     .motivation__card {
         box-shadow: 0px 8px 20px 0px rgb(0 0 0 / 11%);
         padding: 40px 25px;
-        border-radius: 8px;
+        border-radius: 15px;
         transition: .5s;
         margin-bottom: 30px;
         margin-top: 15px;
@@ -2409,7 +2413,8 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
         background-color: #fff;
         box-shadow: 0px 5px 20px 0px rgb(0 0 0 / 10%);
         transition: 0.5s;
-        border-radius: 5px;
+        border-radius: 15px;
+        height: 100%;
     }
     
     .feature__card img {
@@ -2453,6 +2458,11 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     .timeline__card {
         padding-left: 85px;
         padding-right: 85px;
+        font-size: 20px;
+    }
+    
+    .timeline__card img {
+        max-height: 200px;
     }
     /*............Section FAQ.........*/
     
@@ -2612,6 +2622,12 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     .founder__content {
         box-shadow: 0 0 10px 5px #f4f4f4;
         padding: 20px;
+    }
+    
+    .founder__content img {
+        float: left;
+        margin: 0 24px 15px 0;
+        max-width: 400px;
     }
     
     .founder__text h2 {
