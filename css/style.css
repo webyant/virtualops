@@ -889,7 +889,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     input[type="reset"],
     input[type="submit"] {
         border-radius: 4px;
-        padding: 8px 16px;
+        padding: 12px 24px;
         line-height: 1;
         font-size: 0.875rem;
         text-align: center;
@@ -1008,7 +1008,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     /*============= BUTTONS =============*/
     
     .btn {
-        padding: 8px 16px;
+        padding: 12px 24px;
         line-height: 1;
         font-size: 0.875rem;
         text-align: center;
@@ -1026,6 +1026,10 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
         text-decoration: none;
         -webkit-appearance: none;
         appearance: none;
+    }
+    
+    .btn:hover {
+        color: #fff;
     }
     
     .btn--white {
@@ -2319,7 +2323,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
         display: flex;
         font-size: 14px;
         justify-content: space-between;
-        border-top: 1px solid grey;
+        border-top: 1px solid #333;
         padding: 24px 0;
         color: #8f8f8f;
     }
@@ -2768,4 +2772,23 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     
     .google-map {
         margin-bottom: 0;
+    }
+    
+    .getintouch {
+        margin-bottom: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #333;
+        padding-bottom: 64px;
+    }
+    
+    .getintouch p {
+        margin-bottom: 0;
+    }
+    
+    .getintouch .btn {
+        border-radius: 50px;
+        padding: 16px 32px;
+        font-size: 20px;
     }
