@@ -1840,7 +1840,6 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     .motivation__text h5 {
         font-style: italic;
         color: #6a7c92;
-        padding-bottom: 20px;
     }
     
     .motivation__text p {
@@ -1941,6 +1940,11 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
         padding: 70px 0 0;
         max-width: 500px;
         margin-bottom: 20px;
+    }
+    
+    .experience__info h5 {
+        font-style: italic;
+        color: #6a7c92;
     }
     
     .experience__info h3 {
@@ -2165,15 +2169,14 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     .marketing__slider {
         position: absolute !important;
         top: 12px;
-        left: 50%;
-        width: 217px;
-        transform: translateX(-50%);
+        left: 128px;
+        width: 264px;
         z-index: 1;
     }
     
     .marketing__images img {
-        width: 217px;
-        height: 462px;
+        width: 265px;
+        height: 575px;
         border-radius: 0;
         object-fit: cover;
     }
@@ -2412,7 +2415,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     }
     
     .feature__card {
-        padding: 45px;
+        padding: 24px;
         text-align: center;
         background-color: #fff;
         box-shadow: 0px 5px 20px 0px rgb(0 0 0 / 10%);
@@ -2427,6 +2430,31 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     
     .feature__card:hover {
         transform: translate3d(0, -10px, 0);
+    }
+    
+    .btn-action-space {
+        display: block;
+        margin-bottom: 16px;
+    }
+    
+    .dots__title span {
+        position: relative;
+    }
+    
+    .dots__title span+span {
+        padding-left: 30px;
+    }
+    
+    .dots__title span+span::before {
+        content: "";
+        background-color: var(--link-hover-font-color);
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
     }
     /*.........section Seo.........*/
     
@@ -2475,29 +2503,29 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
         margin-bottom: 20px;
     }
     
-    .accordian__block h3 {
+    .accordian__block h4 {
         position: relative;
         margin-bottom: 0;
-        padding: 24px 32px;
+        padding: 16px 32px;
         cursor: pointer;
     }
     
-    .accordian__block h3::after,
-    .accordian__block h3::before {
+    .accordian__block h4::after,
+    .accordian__block h4::before {
         content: "";
         position: absolute;
         background-color: #1e1666;
-        top: 36px;
+        top: 28px;
         transform: translateY(-50%);
     }
     
-    .accordian__block h3::after {
+    .accordian__block h4::after {
         height: 2px;
         width: 15px;
         right: 30px;
     }
     
-    .accordian__block h3::before {
+    .accordian__block h4::before {
         height: 15px;
         width: 2px;
         right: 36px;
@@ -2626,6 +2654,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     .founder__content {
         box-shadow: 0 0 10px 5px #f4f4f4;
         padding: 20px;
+        border-radius: 15px;
     }
     
     .founder__content img {
@@ -2639,11 +2668,21 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     }
     /*Social Media*/
     
+    .image-radius {
+        border-radius: 15px;
+        overflow: hidden;
+    }
+    
+    .sticky__img {
+        position: sticky;
+        top: 100px;
+    }
+    
     .media__block {
-        display: flex;
         box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 12%);
         padding: 24px 32px;
         border-radius: 10px;
+        background-color: #fff;
     }
     
     .media__block .media__text {
@@ -2688,6 +2727,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     .contact__info li p {
         max-width: calc(100% - 87px);
         flex: 0 0 calc(100% - 87px);
+        margin-bottom: 0;
     }
     
     .contact__form {
@@ -2776,15 +2816,9 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     
     .getintouch {
         margin-bottom: 64px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
         border-bottom: 1px solid #333;
         padding-bottom: 64px;
-    }
-    
-    .getintouch p {
-        margin-bottom: 0;
+        text-align: center;
     }
     
     .getintouch .btn {

@@ -26,11 +26,11 @@ $(document).ready(function() {
         pauseOnHover: false
     });
     $(function() {
-        var title = $(".accordian__block h3");
+        var title = $(".accordian__block h4");
         title
             .on("click", function() {
                 var ThisIt = $(this);
-                $(".accordian__block h3").not(ThisIt).removeClass("active");
+                $(".accordian__block h4").not(ThisIt).removeClass("active");
                 $(this).toggleClass("active");
                 $(".accordian__content").not(ThisIt.next(".accordian__content")).slideUp(400);
                 ThisIt.next(".accordian__content").slideToggle(400);
