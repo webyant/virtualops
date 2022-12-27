@@ -2990,13 +2990,155 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 @media screen and (max-width: 767px) { 
 
+    .col-sm-6 {
+        max-width: 50%;
+        flex: 0 0 50%;
+    }
+
+    .col-sm-12 {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .banner__img img {
+        max-width: 555px;
+        left: 0;
+        top: 48px;
+    }
+
+    .banner__text h1 {
+        font-size: 42px;
+    }
+
+    .banner__text h1 span {
+        font-size: 90px;
+    }
+
+    .banner__text p {
+        font-size: 20px;
+    }
+
+    .why__content {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .why__block {
+        flex: 0 0 33.33%;
+    }
+
+    .why__block img {
+        margin: 0 auto;
+    }
 }
 
 @media screen and (max-width: 577px) { 
 
+    .section--banner {
+        padding-top: 50px;
+    }
+
+    .banner__img img {
+        max-width: 465px;
+        top: 90px;
+    }
+
+    .marketing__img {
+        background-size: 416px;
+    }
+
+    .marketing__img>img {
+        margin: 0 auto;
+    }
+
+    .marketing__slider {
+        left: 80px;
+    }
+
+    .getintouch .btn {
+        font-size: 16px;
+    }
+
+    .social__links li+li {
+        margin-left: 5px !important;
+    }
 }
 
-@media screen and (max-width: 479px) { 
+@media screen and (max-width: 479px) {
+
+    .col-xxs-12 {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .banner__img  {
+        height: 540px;
+    }
+
+    .banner__img img {
+        max-width: 340px;
+    }
+
+    .banner__text h1 {
+        font-size: 30px;
+    }
+
+    .banner__text h1 span {
+        font-size: 64px;
+    }
+
+    .banner__text p {
+        font-size: 16px;
+    }
+
+    .banner__text p::before {
+        width: 35px;
+    }
+
+    .motivation__dots {
+    display: none;
+    }
+
+    .marketing__slider {
+    left: 15px;
+    }
+
+    .motivation__text h2 {
+        font-size: 24px;
+    }
+
+    .succeed__heading h2 {
+        font-size: 24px;
+    }
+
+    .content__img img {
+        height: 410px;
+    }
+
+    .experience__info  h2 {
+        font-size: 24px;
+    }
+
+    .why__heading h2 {
+        text-align: center;
+    }
+
+    .why__block {
+        flex: 0 0 100%;
+    }
+
+    .getintouch h2 {
+        font-size: 24px;
+    }
+
+    .footer__bottom {
+        flex-wrap: wrap;
+        flex: 0 0 100%;
+    }
+
+    .footer__bottom .social__links {
+        margin: 10px auto 0 auto;
+    }
 
 }
 
