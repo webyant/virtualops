@@ -2827,6 +2827,46 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
         font-size: 20px;
     }
 
+    /*---- Menu Toggle ----*/
+      
+      .menu__toggle {
+        display: none;
+        flex-wrap: wrap;
+        width: 30px;
+        height: 24px;
+        z-index: 999;
+        cursor: pointer;
+        border: none;
+      }
+      
+      .menu__toggle:focus {
+        outline: none;
+      }
+      
+      .menu__toggle .bar1, .menu__toggle .bar2, .menu__toggle .bar3 {
+        height: 2px;
+        background-color: #000;
+        transition: all .3s ease-in-out;
+        margin-left: auto;
+        max-width: 100%;
+        flex: 0 0 100%;
+      }
+      
+      .nav-on .bar1, .nav-on .bar2 {
+        background-color: #000;
+      }
+      
+      .nav-on .bar1 {
+        transform: rotate(45deg) translateX(8px);
+      }
+      
+      .nav-on .bar2 {
+        transform: rotate(-45deg) translateX(8px);
+      }
+      
+      .nav-on .bar3 {
+        display: none;
+      }
 
 
 
@@ -2858,6 +2898,93 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 }
 
 @media screen and (max-width: 1023px) { 
+
+    .col-md-6 {
+        max-width: 50%;
+        flex: 0 0 50%;
+    }
+
+    .col-md-12 {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .navbar {
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 92%;
+        top: 85px;
+        background-color: #fff;
+    }
+
+    .navbar ul {
+        display: block;
+    }
+
+    .navbar ul li {
+        margin-left: 40px;
+    }
+
+    .menu__toggle {
+        display: block;
+        display: flex;
+    }
+    
+    .banner__img img {
+        max-width: 400px;
+        top: 125px;
+    }
+
+    .banner__text h1 {
+        font-size: 36px;
+    }
+
+    .banner__text h1 span {
+        font-size: 72px;
+    }
+
+    .banner__text p {
+        font-size: 18px;
+    }
+    
+    .motivation__text {
+        margin-top: 48px;
+    }
+
+    .motivation__dots img {
+        margin-left: 255px;
+    }
+
+    .marketing__img>img {
+        margin-left: 100px;
+    }
+
+    .marketing__img {
+        background-size: 498px;
+        margin-bottom: 48px;
+    }
+
+    .marketing__slider {
+        left: 116px;
+    }
+
+    .experience__info {
+        max-width: 100%;
+    }
+
+    blockquote p {
+        font-size: 16px;
+    }
+
+
+    .site-footer h5 {
+        font-size: 16px;
+    }
+
+    .site-footer .row p {
+        line-height: 22px;
+    }
 
 }
 
