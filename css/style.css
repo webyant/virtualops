@@ -2826,3 +2826,53 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
         padding: 16px 32px;
         font-size: 20px;
     }
+
+
+
+
+/*-------------------------- Responsive --------------------------*/
+
+@media screen and (max-width: 1139px) { 
+
+    .banner__img img {
+        max-width: 550px;
+        top: 50px;
+    }
+
+    .motivation__text h2 {
+        font-size: 30px;
+    }
+    
+    .marketing__img {
+        background-size: 465px;
+    }
+
+    .marketing__slider {
+        left: 100px;
+    }
+
+    .blockquote p {
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (max-width: 1023px) { 
+
+}
+
+@media screen and (max-width: 767px) { 
+
+}
+
+@media screen and (max-width: 577px) { 
+
+}
+
+@media screen and (max-width: 479px) { 
+
+}
+
+@media screen and (max-width: 359px) { 
+
+}
