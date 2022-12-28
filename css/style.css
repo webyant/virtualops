@@ -2898,9 +2898,6 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     }
 
 
-    /*-- About --*/
-
-    /*-- Services --*/
 
 }
 
@@ -2918,6 +2915,10 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
     .mt-md-48 {
         margin-top: 48px;
+    }
+
+    .mb-md-48 {
+        margin-bottom: 48px;
     }
 
     .col-md-6 {
@@ -3032,7 +3033,6 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
         margin-bottom: 0;
     }
 
-    /*-- Services --*/
 
 }
 
@@ -3143,15 +3143,23 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
     /*-- Index --*/
 
+    .mt-xs-48 {
+        margin-top: 48px;
+    }
+
     .col-xs-2 {
         max-width: 16.66%;
         flex: 0 0 16.66%;
     }
 
-
     .col-xs-10 {
         max-width: 83.33%;
         flex: 0 0 83.33%;
+    }
+
+    .col-xs-12 {
+        max-width: 100%;
+        flex: 0 0 100%;
     }
 
     .banner__img {
@@ -3236,6 +3244,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     .accordian__block h4 {
         padding: 16px 40px;
     }
+
 
 }
 
