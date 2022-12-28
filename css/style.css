@@ -2894,11 +2894,13 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     }
 
     .blockquote p {
-        font-size: 18px;
+        font-size: 16px;
     }
 
 
     /*-- About --*/
+
+    /*-- Services --*/
 
 }
 
@@ -3030,11 +3032,17 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
         margin-bottom: 0;
     }
 
+    /*-- Services --*/
+
 }
 
 @media screen and (max-width: 767px) { 
 
     /*-- Index --*/
+
+    .mt-sm-48 {
+        margin-top: 48px;
+    }
 
     .col-sm-3 {
         max-width: 25%;
@@ -3120,6 +3128,13 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     .timeline__card {
         padding-left: 10px;
         padding-right: 10px;
+    }
+
+
+    /*-- Services --*/
+
+    .hero__image img {
+        margin: 0 auto;
     }
 
 }
@@ -3214,6 +3229,14 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
         padding-left: 0;
         padding-right: 0;
     }
+
+
+    /*-- Services --*/
+    
+    .accordian__block h4 {
+        padding: 16px 40px;
+    }
+
 }
 
 @media screen and (max-width: 479px) {
@@ -3322,6 +3345,10 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
         font-size: 16px;
     }
 
+
+
+    /*-- Services --*/
+
 }
 
 @media screen and (max-width: 359px) { 
@@ -3373,4 +3400,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
         padding: 10px 55px 10px 20px;
         font-size: 16px;
     }
+
+
+    /*-- Services --*/
 }
