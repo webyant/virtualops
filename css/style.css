@@ -1942,6 +1942,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
         margin-bottom: 20px;
     }
     
+    .highlighted,
     .experience__info h5 {
         font-style: italic;
         color: #6a7c92;
@@ -2826,10 +2827,9 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
         padding: 16px 32px;
         font-size: 20px;
     }
-
     /*---- Menu Toggle ----*/
-      
-      .menu__toggle {
+    
+    .menu__toggle {
         display: none;
         flex-wrap: wrap;
         width: 30px;
@@ -2837,579 +2837,435 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
         z-index: 999;
         cursor: pointer;
         border: none;
-      }
-      
-      .menu__toggle:focus {
+    }
+    
+    .menu__toggle:focus {
         outline: none;
-      }
-      
-      .menu__toggle .bar1, .menu__toggle .bar2, .menu__toggle .bar3 {
+    }
+    
+    .menu__toggle .bar1,
+    .menu__toggle .bar2,
+    .menu__toggle .bar3 {
         height: 2px;
         background-color: #000;
         transition: all .3s ease-in-out;
         margin-left: auto;
         max-width: 100%;
         flex: 0 0 100%;
-      }
-      
-      .nav-on .bar1, .nav-on .bar2 {
+    }
+    
+    .nav-on .bar1,
+    .nav-on .bar2 {
         background-color: #000;
-      }
-      
-      .nav-on .bar1 {
+    }
+    
+    .nav-on .bar1 {
         transform: rotate(45deg) translateX(8px);
-      }
-      
-      .nav-on .bar2 {
+    }
+    
+    .nav-on .bar2 {
         transform: rotate(-45deg) translateX(8px);
-      }
-      
-      .nav-on .bar3 {
-        display: none;
-      }
-
-
-
-/*-------------------------- Responsive --------------------------*/
-
-@media screen and (max-width: 1139px) { 
-
-    /*-- Index --*/
-
-    .banner__img img {
-        max-width: 550px;
-        top: 50px;
-    }
-
-    .motivation__text h2 {
-        font-size: 30px;
     }
     
-    .marketing__img {
-        background-size: 465px;
-    }
-
-    .marketing__slider {
-        left: 100px;
-    }
-
-    .blockquote p {
-        font-size: 16px;
-    }
-
-
-
-}
-
-@media screen and (max-width: 1023px) { 
-
-    /*-- Index --*/
-
-    .wrap,
-    .wrap-fuild {
-        width: 100%;
-        padding-left: 16px;
-        padding-right: 16px;
-        overflow: hidden;
-    }
-
-    .mt-md-48 {
-        margin-top: 48px;
-    }
-
-    .mb-md-48 {
-        margin-bottom: 48px;
-    }
-
-    .col-md-6 {
-        max-width: 50%;
-        flex: 0 0 50%;
-    }
-
-    .col-md-12 {
-        max-width: 100%;
-        flex: 0 0 100%;
-    }
-
-    .navbar {
-        display: none;
-        position: absolute;
-        left: 0;
-        width: 100%;
-        top: 85px;
-        background-color: #fff;
-    }
-
-    .navbar ul {
-        display: block;
-    }
-
-    .navbar ul li {
-        margin-left: 40px;
-    }
-
-    .menu__toggle {
-        display: block;
-        display: flex;
-    }
-    
-    .banner__img img {
-        max-width: 380px;
-        top: 125px;
-    }
-
-    .banner__text h1 {
-        font-size: 32px;
-    }
-
-    .banner__text h1 span {
-        font-size: 72px;
-    }
-
-    .banner__text p {
-        font-size: 18px;
-    }
-    
-    .motivation__text {
-        margin-top: 48px;
-    }
-
-    .motivation__dots img {
-        margin-left: 255px;
-    }
-
-    .marketing__img {
-        margin-bottom: 48px;
-        background-position: center;
-    }
-
-    .marketing__slider {
-        left: 236px;
-    }
-
-    .experience__info {
-        max-width: 100%;
-        padding: 0;
-    }
-
-    blockquote p {
-        font-size: 16px;
-    }
-
-    .site-footer h5 {
-        font-size: 16px;
-    }
-
-    .site-footer .row p {
-        line-height: 22px;
-    }
-
-
-    /*-- About --*/
-
-    .section--creativity .section__title {
-        margin-bottom: 0;
-    }
-
-    .timeline__card {
-        padding-left: 45px;
-        padding-right: 45px;
-    }
-    
-    .section--founder {
-        padding-top: 0;
-    }
-
-    .secton--faq .section__title {
-        margin-top: 48px;
-        margin-bottom: 48px;
-    }
-
-    .founder__content img {
-        max-width: 100%;
-    }
-
-    .accordian__list :last-child {
-        margin-bottom: 0;
-    }
-
-
-}
-
-@media screen and (max-width: 767px) { 
-
-    /*-- Index --*/
-
-    .mt-sm-48 {
-        margin-top: 48px;
-    }
-
-    .col-sm-3 {
-        max-width: 25%;
-        flex: 0 0 25%;
-    }
-
-    .col-sm-6 {
-        max-width: 50%;
-        flex: 0 0 50%;
-    }
-
-    .col-sm-9 {
-        max-width: 75%;
-        flex: 0 0 75%;
-    }
-
-    .col-sm-12 {
-        max-width: 100%;
-        flex: 0 0 100%;
-    }
-
-    .banner__img {
-        position: static;
-        height: 475px;
-    }
-
-    .banner__img img {
-        max-width: 525px;
-        top: 150px;
-        margin: 0 auto;
-    }
-
-    .banner__text  {
-        text-align: center;
-    }
-    
-    .banner__text p::before {
+    .nav-on .bar3 {
         display: none;
     }
-
-    .banner__text h1 {
-        font-size: 42px;
-    }
-
-    .banner__text h1 span {
-        font-size: 90px;
-        padding-left: 0;
-    }
-
-    .banner__text p {
-        font-size: 20px;
-        padding-left: 0;
-    }
-
-    .succeed__heading h2 {
-        font-size: 28px;
+    /*-------------------------- Responsive --------------------------*/
+    
+    @media screen and (max-width: 1139px) {
+        /*-- Index --*/
+        .banner__img img {
+            max-width: 550px;
+            top: 50px;
+        }
+        .motivation__text h2 {
+            font-size: 30px;
+        }
+        .marketing__img {
+            background-size: 465px;
+        }
+        .marketing__slider {
+            left: 100px;
+        }
+        .blockquote p {
+            font-size: 16px;
+        }
     }
     
-    .marketing__slider {
-        left: 140px;
-    }
-
-    .why__content {
-        flex-wrap: wrap;
-        justify-content: flex-start;
-    }
-
-    .why__block {
-        flex: 0 0 33.33%;
-    }
-
-    .why__block img {
-        margin: 0 auto;
-    }
-
-
-    /*-- About --*/
-
-    .section__title h2{
-        font-size: 28px;
-    }
-
-    .timeline__card {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-
-    /*-- Services --*/
-
-    .hero__image img {
-        margin: 0 auto;
-    }
-
-}
-
-@media screen and (max-width: 577px) { 
-
-    /*-- Index --*/
-
-    .mt-xs-48 {
-        margin-top: 48px;
-    }
-
-    .col-xs-2 {
-        max-width: 16.66%;
-        flex: 0 0 16.66%;
-    }
-
-    .col-xs-10 {
-        max-width: 83.33%;
-        flex: 0 0 83.33%;
-    }
-
-    .col-xs-12 {
-        max-width: 100%;
-        flex: 0 0 100%;
-    }
-
-    .banner__img {
-        height: 450px;
-    }
-
-    .banner__img img {
-        max-width: 425px;
-    }
-
-    .motivation__text  h2 {
-        font-size: 22px;
-    }
-
-    .succeed__heading h2 {
-        font-size: 22px;
-    }
-
-    .section--succeed h3 {
-        font-size: 20px;
-    }
-
-    .experience__info  h2 {
-        font-size: 22px;
-    }
-
-    .marketing__img {
-        background-size: 416px;
-    }
-
-    .marketing__img>img {
-        margin: 0 auto;
-    }
-
-    .marketing__slider {
-        left: 90px;
-    }
-
-    .why__heading h2 {
-        font-size: 22px;
-    }
-
-    .why__block h4 {
-        font-size: 18px;
-    }
-
-    .section--advertising h2 {
-        font-size: 22px;
-    }
-
-    .testimonial-title h3 {
-        font-size: 20px;
-    }
-
-    .getintouch h2 {
-        font-size: 22px;
-    }
-
-    .getintouch .btn {
-        font-size: 16px;
-    }
-
-    .social__links li+li {
-        margin-left: 5px !important;
-    }
-
-
-    /*-- About --*/
-
-    .section__title h2 {
-        font-size: 24px;
-    }
-
-    .timeline__card {
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-
-    /*-- Services --*/
-    
-    .accordian__block h4 {
-        padding: 16px 40px;
-    }
-
-
-}
-
-@media screen and (max-width: 479px) {
-
-    /*-- Index --*/
-
-    .col-xxs-12 {
-        max-width: 100%;
-        flex: 0 0 100%;
-    }
-
-    .banner__img  {
-        height: 300px;
-        position: static;
-    }
-
-    .banner__img img {
-        max-width: 300px;
-    }
-
-    .banner__text h1 {
-        font-size: 30px;
-    }
-
-    .banner__text h1 span {
-        font-size: 64px;
-    }
-
-    .banner__text p {
-        font-size: 16px;
+    @media screen and (max-width: 1023px) {
+        /*-- Index --*/
+        .wrap,
+        .wrap-fuild {
+            width: 100%;
+            padding-left: 16px;
+            padding-right: 16px;
+            overflow: hidden;
+        }
+        .mt-md-48 {
+            margin-top: 48px;
+        }
+        .mb-md-48 {
+            margin-bottom: 48px;
+        }
+        .col-md-6 {
+            max-width: 50%;
+            flex: 0 0 50%;
+        }
+        .col-md-12 {
+            max-width: 100%;
+            flex: 0 0 100%;
+        }
+        .navbar {
+            display: none;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            top: 85px;
+            background-color: #fff;
+        }
+        .navbar ul {
+            display: block;
+        }
+        .navbar ul li {
+            margin-left: 40px;
+        }
+        .menu__toggle {
+            display: block;
+            display: flex;
+        }
+        .banner__img img {
+            max-width: 380px;
+            top: 125px;
+        }
+        .banner__text h1 {
+            font-size: 32px;
+        }
+        .banner__text h1 span {
+            font-size: 72px;
+        }
+        .banner__text p {
+            font-size: 18px;
+        }
+        .motivation__text {
+            margin-top: 48px;
+        }
+        .motivation__dots img {
+            margin-left: 255px;
+        }
+        .marketing__img {
+            margin-bottom: 48px;
+            background-position: center;
+        }
+        .marketing__slider {
+            left: 236px;
+        }
+        .experience__info {
+            max-width: 100%;
+            padding: 0;
+        }
+        blockquote p {
+            font-size: 16px;
+        }
+        .site-footer h5 {
+            font-size: 16px;
+        }
+        .site-footer .row p {
+            line-height: 22px;
+        }
+        /*-- About --*/
+        .section--creativity .section__title {
+            margin-bottom: 0;
+        }
+        .timeline__card {
+            padding-left: 45px;
+            padding-right: 45px;
+        }
+        .section--founder {
+            padding-top: 0;
+        }
+        .secton--faq .section__title {
+            margin-top: 48px;
+            margin-bottom: 48px;
+        }
+        .founder__content img {
+            max-width: 100%;
+        }
+        .accordian__list :last-child {
+            margin-bottom: 0;
+        }
     }
     
-    .motivation__card {
-        margin-top: 0;
-    }
-
-    .motivation__card h3 {
-        font-size: 18px;
-    }
-
-    .motivation__dots {
-        display: none;
-    }
-
-    .marketing__slider {
-        left: 32px;
-    }
-
-    .succeed__heading h2 {
-        font-size: 28px;
+    @media screen and (max-width: 767px) {
+        /*-- Index --*/
+        .mt-sm-48 {
+            margin-top: 48px;
+        }
+        .col-sm-3 {
+            max-width: 25%;
+            flex: 0 0 25%;
+        }
+        .col-sm-6 {
+            max-width: 50%;
+            flex: 0 0 50%;
+        }
+        .col-sm-9 {
+            max-width: 75%;
+            flex: 0 0 75%;
+        }
+        .col-sm-12 {
+            max-width: 100%;
+            flex: 0 0 100%;
+        }
+        .banner__img {
+            position: static;
+            height: 475px;
+        }
+        .banner__img img {
+            max-width: 525px;
+            top: 150px;
+            margin: 0 auto;
+        }
+        .banner__text {
+            text-align: center;
+        }
+        .banner__text p::before {
+            display: none;
+        }
+        .banner__text h1 {
+            font-size: 42px;
+        }
+        .banner__text h1 span {
+            font-size: 90px;
+            padding-left: 0;
+        }
+        .banner__text p {
+            font-size: 20px;
+            padding-left: 0;
+        }
+        .succeed__heading h2 {
+            font-size: 28px;
+        }
+        .marketing__slider {
+            left: 140px;
+        }
+        .why__content {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+        .why__block {
+            flex: 0 0 33.33%;
+        }
+        .why__block img {
+            margin: 0 auto;
+        }
+        /*-- About --*/
+        .section__title h2 {
+            font-size: 28px;
+        }
+        .timeline__card {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        /*-- Services --*/
+        .hero__image img {
+            margin: 0 auto;
+        }
     }
     
-    .section--succeed h3 {
-        font-size: 18px;
+    @media screen and (max-width: 577px) {
+        /*-- Index --*/
+        .mt-xs-48 {
+            margin-top: 48px;
+        }
+        .col-xs-2 {
+            max-width: 16.66%;
+            flex: 0 0 16.66%;
+        }
+        .col-xs-10 {
+            max-width: 83.33%;
+            flex: 0 0 83.33%;
+        }
+        .col-xs-12 {
+            max-width: 100%;
+            flex: 0 0 100%;
+        }
+        .banner__img {
+            height: 450px;
+        }
+        .banner__img img {
+            max-width: 425px;
+        }
+        .motivation__text h2 {
+            font-size: 22px;
+        }
+        .succeed__heading h2 {
+            font-size: 22px;
+        }
+        .section--succeed h3 {
+            font-size: 20px;
+        }
+        .experience__info h2 {
+            font-size: 22px;
+        }
+        .marketing__img {
+            background-size: 416px;
+        }
+        .marketing__img>img {
+            margin: 0 auto;
+        }
+        .marketing__slider {
+            left: 90px;
+        }
+        .why__heading h2 {
+            font-size: 22px;
+        }
+        .why__block h4 {
+            font-size: 18px;
+        }
+        .section--advertising h2 {
+            font-size: 22px;
+        }
+        .testimonial-title h3 {
+            font-size: 20px;
+        }
+        .getintouch h2 {
+            font-size: 22px;
+        }
+        .getintouch .btn {
+            font-size: 16px;
+        }
+        .social__links li+li {
+            margin-left: 5px !important;
+        }
+        /*-- About --*/
+        .section__title h2 {
+            font-size: 24px;
+        }
+        .timeline__card {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        /*-- Services --*/
+        .accordian__block h4 {
+            padding: 16px 40px;
+        }
     }
-
-    .info__text h4 {
-        font-size: 18px;
+    
+    @media screen and (max-width: 479px) {
+        /*-- Index --*/
+        .col-xxs-12 {
+            max-width: 100%;
+            flex: 0 0 100%;
+        }
+        .banner__img {
+            height: 300px;
+            position: static;
+        }
+        .banner__img img {
+            max-width: 300px;
+        }
+        .banner__text h1 {
+            font-size: 30px;
+        }
+        .banner__text h1 span {
+            font-size: 64px;
+        }
+        .banner__text p {
+            font-size: 16px;
+        }
+        .motivation__card {
+            margin-top: 0;
+        }
+        .motivation__card h3 {
+            font-size: 18px;
+        }
+        .motivation__dots {
+            display: none;
+        }
+        .marketing__slider {
+            left: 32px;
+        }
+        .succeed__heading h2 {
+            font-size: 28px;
+        }
+        .section--succeed h3 {
+            font-size: 18px;
+        }
+        .info__text h4 {
+            font-size: 18px;
+        }
+        .content__img img {
+            height: 410px;
+        }
+        .experience__info h5 {
+            font-size: 16px;
+        }
+        .why__heading h2 {
+            text-align: center;
+        }
+        .why__block h4 {
+            font-size: 16px;
+        }
+        .why__block {
+            flex: 0 0 100%;
+        }
+        .footer__bottom {
+            flex-wrap: wrap;
+            flex: 0 0 100%;
+        }
+        .footer__bottom .social__links {
+            margin: 10px auto 0 auto;
+        }
+        /*-- About --*/
+        .section__title h2 {
+            font-size: 20px;
+        }
+        .timeline__card p {
+            font-size: 15px;
+            line-height: 1.4;
+        }
+        .accordian__block h4 {
+            padding: 16px 16px;
+            font-size: 16px;
+        }
+        /*-- Services --*/
     }
-
-    .content__img img {
-        height: 410px;
+    
+    @media screen and (max-width: 359px) {
+        /*-- Index --*/
+        .banner__img {
+            height: 250px;
+        }
+        .banner__img img {
+            max-width: 270px;
+        }
+        .motivation__text h2 {
+            font-size: 20px;
+        }
+        .succeed__heading h2 {
+            font-size: 24px;
+        }
+        .marketing__slider {
+            left: 15px;
+            top: 20px;
+            width: 260px;
+        }
+        .marketing__images img {
+            height: 550px;
+        }
+        .content__img img {
+            height: 430px;
+        }
+        .site-info {
+            font-size: 13px;
+        }
+        /*-- About --*/
+        .feature__card h4 {
+            font-size: 18px;
+        }
+        .accordian__block h4 {
+            padding: 10px 55px 10px 20px;
+            font-size: 16px;
+        }
+        /*-- Services --*/
     }
-
-    .experience__info h5 {
-        font-size: 16px;
-    }
-
-    .why__heading h2 {
-        text-align: center;
-    }
-
-    .why__block h4 {
-        font-size: 16px;
-    }
-
-    .why__block {
-        flex: 0 0 100%;
-    }
-
-
-    .footer__bottom {
-        flex-wrap: wrap;
-        flex: 0 0 100%;
-    }
-
-    .footer__bottom .social__links {
-        margin: 10px auto 0 auto;
-    }
-
-
-    /*-- About --*/
-
-    .section__title h2 {
-        font-size: 20px;
-    }
-
-    .timeline__card p {
-        font-size: 15px;
-        line-height: 1.4;
-
-    }
-
-    .accordian__block h4 {
-        padding: 16px 16px;
-        font-size: 16px;
-    }
-
-
-
-    /*-- Services --*/
-
-}
-
-@media screen and (max-width: 359px) { 
-
-    /*-- Index --*/
-
-    .banner__img {
-        height: 250px;
-    }
-
-    .banner__img img {
-        max-width: 270px;
-    }
-
-    .motivation__text h2 {
-        font-size: 20px;
-    }
-
-    .succeed__heading h2 {
-        font-size: 24px;
-    }
-
-    .marketing__slider  {
-        left: 15px;
-        top: 20px;
-        width: 260px;
-    }
-
-    .marketing__images img {
-        height: 550px;
-    }
-
-    .content__img img {
-        height: 430px;
-    }
-
-    .site-info {
-        font-size: 13px;
-    }
-
-
-    /*-- About --*/
-
-    .feature__card h4 {
-        font-size: 18px;
-    }
-
-    .accordian__block h4 {
-        padding: 10px 55px 10px 20px;
-        font-size: 16px;
-    }
-
-
-    /*-- Services --*/
-}
