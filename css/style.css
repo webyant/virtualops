@@ -1741,10 +1741,11 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
     .header--banner {
         background: none;
+        padding: 88px 0 0 0;
     }
 
     .header--banner video {
-        width: 1140px;
+        width: 100%;
     }
     
     .banner__text h1 {
