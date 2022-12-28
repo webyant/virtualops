@@ -2897,6 +2897,9 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
         font-size: 18px;
     }
 
+
+    /*-- About --*/
+
 }
 
 @media screen and (max-width: 1023px) { 
@@ -2941,7 +2944,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     }
 
     .banner__text h1 {
-        font-size: 36px;
+        font-size: 32px;
     }
 
     .banner__text h1 span {
@@ -2984,6 +2987,24 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
     .site-footer .row p {
         line-height: 22px;
+    }
+
+
+    /*-- About --*/
+
+    .timeline__card {
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+    .secton--faq .section__title {
+        margin-top: 48px;
+        margin-bottom: 0;
+    }
+
+    .section--creativity .section__title {
+        margin-top: 48px;
+        margin-bottom: 0;
     }
 
 }
@@ -3055,6 +3076,10 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     .why__block img {
         margin: 0 auto;
     }
+
+
+    /*-- About --*/
+
 }
 
 @media screen and (max-width: 577px) { 
@@ -3124,6 +3149,9 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     .social__links li+li {
         margin-left: 5px !important;
     }
+
+
+    /*-- About --*/
 }
 
 @media screen and (max-width: 479px) {
@@ -3214,6 +3242,9 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
         margin: 10px auto 0 auto;
     }
 
+
+    /*-- About --*/
+
 }
 
 @media screen and (max-width: 359px) { 
@@ -3253,4 +3284,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     .site-info {
         font-size: 12px;
     }
+
+
+    /*-- About --*/
 }
