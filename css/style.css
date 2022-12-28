@@ -3004,7 +3004,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
     .banner__img {
         position: static;
-        height: 535px;
+        height: 475px;
     }
 
     .banner__img img {
@@ -3061,12 +3061,8 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
     /*-- Index --*/
 
-    .section  {
-        padding: 50px 0;
-    }
-
     .banner__img {
-        height: 570px;
+        height: 450px;
     }
 
     .banner__img img {
@@ -3140,7 +3136,8 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     }
 
     .banner__img  {
-        height: 600px;
+        height: 300px;
+        position: static;
     }
 
     .banner__img img {
@@ -3224,7 +3221,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     /*-- Index --*/
 
     .banner__img {
-        height: 400px;
+        height: 250px;
     }
 
     .banner__img img {
