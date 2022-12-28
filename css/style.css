@@ -2911,6 +2911,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
         width: 100%;
         padding-left: 16px;
         padding-right: 16px;
+        overflow: hidden;
     }
 
     .mt-md-48 {
