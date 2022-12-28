@@ -2992,18 +2992,30 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
     /*-- About --*/
 
-    .timeline__card {
-        padding-left: 45px;
-        padding-right: 45px;
-    }
-
-    .secton--faq .section__title {
+    .section--creativity .section__title+.section__title {
         margin-top: 48px;
         margin-bottom: 0;
     }
 
-    .section--creativity .section__title {
+    .timeline__card {
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+    
+    .section--founder {
+        padding-top: 0;
+    }
+
+    .secton--faq .section__title {
         margin-top: 48px;
+        margin-bottom: 48px;
+    }
+
+    .founder__content img {
+        max-width: 100%;
+    }
+
+    .accordian__list :last-child {
         margin-bottom: 0;
     }
 
@@ -3079,6 +3091,15 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 
     /*-- About --*/
+
+    .section__title h2{
+        font-size: 28px;
+    }
+
+    .timeline__card {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 
 }
 
