@@ -2906,6 +2906,10 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
     /*-- Index --*/
 
+    .mt-md-48 {
+        margin-top: 48px;
+    }
+
     .col-md-6 {
         max-width: 50%;
         flex: 0 0 50%;
@@ -2992,8 +2996,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
     /*-- About --*/
 
-    .section--creativity .section__title+.section__title {
-        margin-top: 48px;
+    .section--creativity .section__title {
         margin-bottom: 0;
     }
 
@@ -3332,4 +3335,13 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 
     /*-- About --*/
+
+    .feature__card h4 {
+        font-size: 18px;
+    }
+
+    .accordian__block h4 {
+        padding: 10px 40px 10px 20px;
+        font-size: 16px;
+    }
 }
