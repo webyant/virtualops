@@ -1738,6 +1738,14 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
         padding-top: 200px;
         overflow: hidden;
     }
+
+    .header--banner {
+        background: none;
+    }
+
+    .header--banner video {
+        width: 1140px;
+    }
     
     .banner__text h1 {
         color: var(--white-color);
