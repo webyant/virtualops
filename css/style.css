@@ -2906,6 +2906,13 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
     /*-- Index --*/
 
+    .wrap,
+    .wrap-fuild {
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
     .mt-md-48 {
         margin-top: 48px;
     }
@@ -2943,7 +2950,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     }
     
     .banner__img img {
-        max-width: 400px;
+        max-width: 380px;
         top: 125px;
     }
 
@@ -2973,7 +2980,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     }
 
     .marketing__slider {
-        left: 216px;
+        left: 236px;
     }
 
     .experience__info {
@@ -3028,9 +3035,19 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
     /*-- Index --*/
 
+    .col-sm-3 {
+        max-width: 25%;
+        flex: 0 0 25%;
+    }
+
     .col-sm-6 {
         max-width: 50%;
         flex: 0 0 50%;
+    }
+
+    .col-sm-9 {
+        max-width: 75%;
+        flex: 0 0 75%;
     }
 
     .col-sm-12 {
@@ -3076,7 +3093,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     }
     
     .marketing__slider {
-        left: 124px;
+        left: 140px;
     }
 
     .why__content {
@@ -3109,6 +3126,17 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 @media screen and (max-width: 577px) { 
 
     /*-- Index --*/
+
+    .col-xs-2 {
+        max-width: 16.66%;
+        flex: 0 0 16.66%;
+    }
+
+
+    .col-xs-10 {
+        max-width: 83.33%;
+        flex: 0 0 83.33%;
+    }
 
     .banner__img {
         height: 450px;
@@ -3143,7 +3171,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     }
 
     .marketing__slider {
-        left: 80px;
+        left: 90px;
     }
 
     .why__heading h2 {
@@ -3230,11 +3258,11 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     }
 
     .marketing__slider {
-        left: 15px;
+        left: 32px;
     }
 
     .succeed__heading h2 {
-        font-size: 24px;
+        font-size: 28px;
     }
     
     .section--succeed h3 {
@@ -3312,17 +3340,17 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     }
 
     .succeed__heading h2 {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .marketing__slider  {
-        left: 10px;
-        top: 25px;
-        width: 240px;
+        left: 15px;
+        top: 20px;
+        width: 260px;
     }
 
     .marketing__images img {
-        height: 480px;
+        height: 550px;
     }
 
     .content__img img {
@@ -3330,7 +3358,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     }
 
     .site-info {
-        font-size: 12px;
+        font-size: 13px;
     }
 
 
@@ -3341,7 +3369,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     }
 
     .accordian__block h4 {
-        padding: 10px 40px 10px 20px;
+        padding: 10px 55px 10px 20px;
         font-size: 16px;
     }
 }
