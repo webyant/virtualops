@@ -2874,6 +2874,8 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 @media screen and (max-width: 1139px) { 
 
+    /*-- Index --*/
+
     .banner__img img {
         max-width: 550px;
         top: 50px;
@@ -2899,6 +2901,8 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 @media screen and (max-width: 1023px) { 
 
+    /*-- Index --*/
+
     .col-md-6 {
         max-width: 50%;
         flex: 0 0 50%;
@@ -2913,7 +2917,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
         display: none;
         position: absolute;
         left: 0;
-        width: 92%;
+        width: 100%;
         top: 85px;
         background-color: #fff;
     }
@@ -2956,27 +2960,23 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
         margin-left: 255px;
     }
 
-    .marketing__img>img {
-        margin-left: 100px;
-    }
-
     .marketing__img {
-        background-size: 498px;
         margin-bottom: 48px;
+        background-position: center;
     }
 
     .marketing__slider {
-        left: 116px;
+        left: 216px;
     }
 
     .experience__info {
         max-width: 100%;
+        padding: 0;
     }
 
     blockquote p {
         font-size: 16px;
     }
-
 
     .site-footer h5 {
         font-size: 16px;
@@ -2990,6 +2990,8 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 @media screen and (max-width: 767px) { 
 
+    /*-- Index --*/
+
     .col-sm-6 {
         max-width: 50%;
         flex: 0 0 50%;
@@ -3000,10 +3002,23 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
         flex: 0 0 100%;
     }
 
+    .banner__img {
+        position: static;
+        height: 535px;
+    }
+
     .banner__img img {
-        max-width: 555px;
-        left: 0;
-        top: 48px;
+        max-width: 525px;
+        top: 150px;
+        margin: 0 auto;
+    }
+
+    .banner__text  {
+        text-align: center;
+    }
+    
+    .banner__text p::before {
+        display: none;
     }
 
     .banner__text h1 {
@@ -3012,10 +3027,20 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
     .banner__text h1 span {
         font-size: 90px;
+        padding-left: 0;
     }
 
     .banner__text p {
         font-size: 20px;
+        padding-left: 0;
+    }
+
+    .succeed__heading h2 {
+        font-size: 28px;
+    }
+    
+    .marketing__slider {
+        left: 124px;
     }
 
     .why__content {
@@ -3034,13 +3059,34 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 @media screen and (max-width: 577px) { 
 
-    .section--banner {
-        padding-top: 50px;
+    /*-- Index --*/
+
+    .section  {
+        padding: 50px 0;
+    }
+
+    .banner__img {
+        height: 570px;
     }
 
     .banner__img img {
-        max-width: 465px;
-        top: 90px;
+        max-width: 425px;
+    }
+
+    .motivation__text  h2 {
+        font-size: 22px;
+    }
+
+    .succeed__heading h2 {
+        font-size: 22px;
+    }
+
+    .section--succeed h3 {
+        font-size: 20px;
+    }
+
+    .experience__info  h2 {
+        font-size: 22px;
     }
 
     .marketing__img {
@@ -3055,6 +3101,26 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
         left: 80px;
     }
 
+    .why__heading h2 {
+        font-size: 22px;
+    }
+
+    .why__block h4 {
+        font-size: 18px;
+    }
+
+    .section--advertising h2 {
+        font-size: 22px;
+    }
+
+    .testimonial-title h3 {
+        font-size: 20px;
+    }
+
+    .getintouch h2 {
+        font-size: 22px;
+    }
+
     .getintouch .btn {
         font-size: 16px;
     }
@@ -3066,17 +3132,19 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 @media screen and (max-width: 479px) {
 
+    /*-- Index --*/
+
     .col-xxs-12 {
         max-width: 100%;
         flex: 0 0 100%;
     }
 
     .banner__img  {
-        height: 540px;
+        height: 600px;
     }
 
     .banner__img img {
-        max-width: 340px;
+        max-width: 300px;
     }
 
     .banner__text h1 {
@@ -3090,46 +3158,55 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     .banner__text p {
         font-size: 16px;
     }
+    
+    .motivation__card {
+        margin-top: 0;
+    }
 
-    .banner__text p::before {
-        width: 35px;
+    .motivation__card h3 {
+        font-size: 18px;
     }
 
     .motivation__dots {
-    display: none;
+        display: none;
     }
 
     .marketing__slider {
-    left: 15px;
-    }
-
-    .motivation__text h2 {
-        font-size: 24px;
+        left: 15px;
     }
 
     .succeed__heading h2 {
         font-size: 24px;
+    }
+    
+    .section--succeed h3 {
+        font-size: 18px;
+    }
+
+    .info__text h4 {
+        font-size: 18px;
     }
 
     .content__img img {
         height: 410px;
     }
 
-    .experience__info  h2 {
-        font-size: 24px;
+    .experience__info h5 {
+        font-size: 16px;
     }
 
     .why__heading h2 {
         text-align: center;
     }
 
+    .why__block h4 {
+        font-size: 16px;
+    }
+
     .why__block {
         flex: 0 0 100%;
     }
 
-    .getintouch h2 {
-        font-size: 24px;
-    }
 
     .footer__bottom {
         flex-wrap: wrap;
@@ -3144,4 +3221,39 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 @media screen and (max-width: 359px) { 
 
+    /*-- Index --*/
+
+    .banner__img {
+        height: 400px;
+    }
+
+    .banner__img img {
+        max-width: 270px;
+    }
+
+    .motivation__text h2 {
+        font-size: 20px;
+    }
+
+    .succeed__heading h2 {
+        font-size: 20px;
+    }
+
+    .marketing__slider  {
+        left: 10px;
+        top: 25px;
+        width: 240px;
+    }
+
+    .marketing__images img {
+        height: 480px;
+    }
+
+    .content__img img {
+        height: 430px;
+    }
+
+    .site-info {
+        font-size: 12px;
+    }
 }
