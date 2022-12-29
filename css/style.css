@@ -1738,6 +1738,25 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
         padding-top: 200px;
         overflow: hidden;
     }
+
+    .about--banner {
+        background-image: url(../images/about-banner.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        position: relative;
+    }
+
+    .about--banner::before {
+        content: " ";
+        position: absolute;
+        height: 500px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: #141618;
+        opacity: 0.8;
+    }
     
     .video--banner {
         background: none;
@@ -1752,10 +1771,16 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
         height: 100%;
         width: 100%;
         background-color: transparent;
+        z-index: -1;
     }
     
     .video--banner video {
         width: 100%;
+    }
+
+    .banner__text {
+        position: relative;
+        z-index: 99;
     }
     
     .banner__text h1 {
