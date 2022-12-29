@@ -1738,7 +1738,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
         padding-top: 200px;
         overflow: hidden;
     }
-
+    
     .about--banner {
         background-image: url(../images/about-banner.png);
         background-repeat: no-repeat;
@@ -1746,7 +1746,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
         width: 100%;
         position: relative;
     }
-
+    
     .about--banner::before {
         content: " ";
         position: absolute;
@@ -1757,7 +1757,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
         background-color: #141618;
         opacity: 0.8;
     }
-
+    
     .services--banner {
         background-image: url(../images/services-banner.png);
         background-repeat: no-repeat;
@@ -1765,18 +1765,18 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
         width: 100%;
         position: relative;
     }
-
+    
     .services--banner::before {
         content: " ";
         position: absolute;
-        height: 500px;
+        height: 630px;
         width: 100%;
         top: 0;
         left: 0;
         background-color: #141618;
         opacity: 0.8;
     }
-
+    
     .testimonials--banner {
         background-image: url(../images/testimonial-banner.png);
         background-repeat: no-repeat;
@@ -1784,7 +1784,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
         width: 100%;
         position: relative;
     }
-
+    
     .testimonials--banner::before {
         content: " ";
         position: absolute;
@@ -1795,7 +1795,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
         background-color: #141618;
         opacity: 0.8;
     }
-
+    
     .contact--banner {
         background-image: url(../images/contactbanner.png);
         background-repeat: no-repeat;
@@ -1803,7 +1803,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
         width: 100%;
         position: relative;
     }
-
+    
     .contact--banner::before {
         content: " ";
         position: absolute;
@@ -1834,7 +1834,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     .video--banner video {
         width: 100%;
     }
-
+    
     .banner__text {
         position: relative;
         z-index: 99;
