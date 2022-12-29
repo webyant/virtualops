@@ -2842,6 +2842,10 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
     .google-map {
         margin-bottom: -110px;
     }
+    
+    .google-map iframe {
+        display: block;
+    }
     /*Form*/
     
     .form-group {
