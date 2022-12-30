@@ -1,0 +1,22 @@
+#advanced-custom-fields-pro-update .update-message {
+    border: 0;
+    padding: 0;
+    background: none;
+    margin: 1px;
+}
+
+#advanced-custom-fields-pro-update .update-message p {
+    display: none !important;
+}
+
+h1 {
+    margin-bottom: 10px !important;
+}
+
+h1 a {
+    width: 250px !important;
+    height: 80px !important;
+    background-size: 250px 80px !important;
+    margin-bottom: 15px !important;
+    background-image: url(../images/archidiaries.png) !important;
+}
