@@ -6,11 +6,11 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
-RewriteBase /findmyservicecenter/
+RewriteBase /virtualops/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /findmyservicecenter/index.php [L]
+RewriteRule . /virtualops/index.php [L]
 </IfModule>
 
 # END WordPress
