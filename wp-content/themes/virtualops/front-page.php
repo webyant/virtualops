@@ -44,31 +44,41 @@ get_header();
                                 <?php endif; ?>
                             </div>
                             <div class="motivation__card wow bounceInUp" data-wow-duration="1.5s">
-                                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/icon3.png"
-                                    alt="Design">
-                                <h3>Product Data Management</h3>
-                                <p>With fast evolving eCommerce, online retailers need a robust product information
-                                    management (PIM) system. Virtual Ops help its clients implement PIM ensuring product
-                                    data is consistent, standard, normalized and categorized
-                                    accurately across channels.</p>
-                                <a href="product-data-management.html" class="btn-text">Learn more</a>
+                                <?php  if( get_field('product_data_management_icon') ) { ?>
+                                <?php echo wp_get_attachment_image( get_field('product_data_management_icon'), 'full' );  ?>
+                                <?php } ?>
+                                <?php if( get_field('product_data_management_heading') ): ?>
+                                <h3><?php the_field('product_data_management_heading'); ?></h3>
+                                <?php endif; ?>
+                                <?php if( get_field('product_data_management_description') ): ?>
+                                <p><?php the_field('product_data_management_description'); ?></p>
+                                <?php endif; ?>
+                                <?php if( get_field('product_data_management_button_link') ): ?>
+                                <a href="<?php the_field('product_data_management_button_link'); ?>"
+                                    class="btn-text"><?php the_field('product_data_management_button_text'); ?></a>
+                                <?php endif; ?>
                             </div>
                             <div class="motivation__dots">
-                                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/dot-bg.png"
-                                    alt="Dotts">
+                                <?php  if( get_field('motivation_img') ) { ?>
+                                <?php echo wp_get_attachment_image( get_field('motivation_img'), 'full' );  ?>
+                                <?php } ?>
                             </div>
                         </div>
                         <div class="col-6 col-md-6 col-sm-12">
                             <div class="motivation__card wow bounceInUp" data-wow-duration="2.0s">
-                                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/icon2.png"
-                                    alt="Design">
-                                <h3>Digital Asset Management</h3>
-                                <p>High quality product images and videos not only strengthen brand image but also drive
-                                    purchase ready behaviour. Online Retailers need to ensure all their products have
-                                    crisp, clean, high quality images that not only
-                                    appeal to its customers visually but also provide an accurate understanding of the
-                                    product.</p>
-                                <a href="digital-asset-management.html" class="btn-text">Learn more</a>
+                                <?php  if( get_field('digital_asset_management_icon') ) { ?>
+                                <?php echo wp_get_attachment_image( get_field('digital_asset_management_icon'), 'full' );  ?>
+                                <?php } ?>
+                                <?php if( get_field('digital_asset_management_heading') ): ?>
+                                <h3><?php the_field('digital_asset_management_heading'); ?></h3>
+                                <?php endif; ?>
+                                <?php if( get_field('digital_asset_management_description') ): ?>
+                                <p><?php the_field('digital_asset_management_description'); ?></p>
+                                <?php endif; ?>
+                                <?php if( get_field('digital_asset_management_button_link') ): ?>
+                                <a href="<?php the_field('digital_asset_management_button_link'); ?>"
+                                    class="btn-text"><?php the_field('digital_asset_management_button_text'); ?></a>
+                                <?php endif; ?>
                             </div>
                         </div>
                     </div>
@@ -91,7 +101,8 @@ get_header();
     <section class="section section--succeed pb-0">
         <div class="wrap">
             <div class="succeed__heading text-center">
-                <h2 class="text-orange dots__title"><span>Collaborate</span><span>Optimize</span><span>Accelerate</span>
+                <h2 class="text-orange dots__title">
+                    <span>Collaborate</span><span>Optimize</span><span>Accelerate</span>
                 </h2>
                 <p class="font-md">Stay Ahead of the Competition </p>
             </div>
@@ -190,34 +201,51 @@ get_header();
     </section>
     <section class="section section--why pt-0">
         <div class="wrap">
+            <?php if( get_field('choose_us_heading') ): ?>
             <div class="why__heading">
-                <h2 class="text-orange">Why Choose Us</h2>
+                <h2 class="text-orange"><?php the_field('choose_us_heading'); ?></h2>
             </div>
+            <?php endif; ?>
             <div class="why__content mt-48">
                 <div class="why__block text-center">
-                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/whychoose1.png"
-                        alt="experience">
-                    <h4>5+ Years<br> Experience </h4>
+                    <?php  if( get_field('why_block_img1') ) { ?>
+                        <?php echo wp_get_attachment_image( get_field('why_block_img1'), 'full' );  ?>
+                    <?php } ?>
+                    <?php if( get_field('why_block_heading1') ): ?>
+                        <h4><?php the_field('why_block_heading1'); ?></h4>
+                    <?php endif; ?>
                 </div>
                 <div class="why__block text-center">
-                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/whychoose2.png"
-                        alt="Accuracy">
-                    <h4>99.5%<br> Accuracy </h4>
+                    <?php  if( get_field('why_block_img2') ) { ?>
+                        <?php echo wp_get_attachment_image( get_field('why_block_img2'), 'full' );  ?>
+                    <?php } ?>
+                    <?php if( get_field('why_block_heading2') ): ?>
+                        <h4><?php the_field('why_block_heading2'); ?></h4>
+                    <?php endif; ?>
                 </div>
                 <div class="why__block text-center">
-                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/whychoose3.png"
-                        alt="Million">
-                    <h4>Million+<br> SKUs </h4>
+                    <?php  if( get_field('why_block_img3') ) { ?>
+                        <?php echo wp_get_attachment_image( get_field('why_block_img3'), 'full' );  ?>
+                    <?php } ?>
+                    <?php if( get_field('why_block_heading3') ): ?>
+                        <h4><?php the_field('why_block_heading3'); ?></h4>
+                    <?php endif; ?>
                 </div>
                 <div class="why__block text-center">
-                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/whychoose4.png"
-                        alt="Delivery">
-                    <h4>On-Time<br> Delivery </h4>
+                    <?php  if( get_field('why_block_img4') ) { ?>
+                        <?php echo wp_get_attachment_image( get_field('why_block_img4'), 'full' );  ?>
+                    <?php } ?>
+                    <?php if( get_field('why_block_heading4') ): ?>
+                        <h4><?php the_field('why_block_heading4'); ?></h4>
+                    <?php endif; ?>
                 </div>
                 <div class="why__block text-center">
-                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/whychoose5.png"
-                        alt="Cost">
-                    <h4>50% Cost<br> Reduction </h4>
+                    <?php  if( get_field('why_block_img5') ) { ?>
+                        <?php echo wp_get_attachment_image( get_field('why_block_img5'), 'full' );  ?>
+                    <?php } ?>
+                    <?php if( get_field('why_block_heading5') ): ?>
+                        <h4><?php the_field('why_block_heading5'); ?></h4>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
