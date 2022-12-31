@@ -14,15 +14,14 @@
 
 get_header();
 ?>
-
 <main id="primary" class="site-main">
-
+    <?php if( get_field('banner_video') ): ?>
     <section class="section section--banner video--banner">
         <video autoplay="" muted="" loop="" playsinline="" id="desktop">
-            <source src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/VirtualOps-Homepage.mp4"
-                type="video/mp4">
+            <source src="<?php the_field('banner_video'); ?>" type="video/mp4">
         </video>
     </section>
+    <?php endif; ?>
     <section class="section section--motivation">
         <div class="wrap">
             <div class="row row--items-center">
@@ -30,14 +29,19 @@ get_header();
                     <div class="row row--items-center">
                         <div class="col-6 col-md-6 col-sm-12">
                             <div class="motivation__card wow bounceInUp" data-wow-duration="1s">
-                                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/icon1.png"
-                                    alt="Design">
-                                <h3>Product Content</h3>
-                                <p>The quality of your product data determines the difference between a sale and losing
-                                    a customer. The key to eCommerce success is providing your customers rich product
-                                    content.
-                                </p>
-                                <a href="product-content.html" class="btn-text">Learn more</a>
+                                <?php  if( get_field('product_content_icon') ) { ?>
+                                <?php echo wp_get_attachment_image( get_field('product_content_icon'), 'full' );  ?>
+                                <?php } ?>
+                                <?php if( get_field('product_content_heading') ): ?>
+                                <h3><?php the_field('product_content_heading'); ?></h3>
+                                <?php endif; ?>
+                                <?php if( get_field('product_content_description') ): ?>
+                                <p><?php the_field('product_content_description'); ?></p>
+                                <?php endif; ?>
+                                <?php if( get_field('product_content_button_link') ): ?>
+                                <a href="<?php the_field('product_content_button_link'); ?>"
+                                    class="btn-text"><?php the_field('product_content_button_text'); ?></a>
+                                <?php endif; ?>
                             </div>
                             <div class="motivation__card wow bounceInUp" data-wow-duration="1.5s">
                                 <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/icon3.png"
@@ -71,21 +75,13 @@ get_header();
                 </div>
                 <div class="col-5 col-md-12">
                     <div class="motivation__text">
+                        <?php if( get_field('services_heading') ): ?>
                         <div class="wow bounceInUp" data-wow-duration="1s">
-                            <h2 class="text-orange">Enriched Product Data can help accelerate your eCommerce growth
-                            </h2>
+                            <h2 class="text-orange"><?php the_field('services_heading'); ?></h2>
                         </div>
-                        <p class=" wow bounceInUp" data-wow-duration="1.5s">In today’s world, customers are spoilt with
-                            choices, channels and options to purchase products. It is critical for online retailers to
-                            showcase perfect product details including apt titles, images, videos, description,
-                            features,
-                            and specifications in order to maximize conversion. Retailers need an A team to manage
-                            product data right from acquisition to publication.</p>
-                        <h5 class=" wow bounceInUp" data-wow-duration="2s">Product Data Quality is the key to optimizing
-                            the customer journey and experience.</h5>
-                        <div class="wow bounceInUp " data-wow-duration="2.5s">
-                            <strong class="btn-action-space">Let us help you boost your online sales.</strong>
-                            <a href="contact-us.html" class="btn">Book a consultation</a>
+                        <?php endif; ?>
+                        <div class="wow bounceInUp" data-wow-duration="2s">
+                            <?php the_content(); ?>
                         </div>
                     </div>
                 </div>
