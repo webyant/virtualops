@@ -10,8 +10,10 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php
+    <?php virtualops_post_thumbnail(); ?>
+    <div class="wrap wrap-840">
+        <header class="entry-header mb-32">
+            <?php
 		if ( is_singular() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
 		else :
@@ -20,19 +22,16 @@
 
 		if ( 'post' === get_post_type() ) :
 			?>
-			<div class="entry-meta">
-				<?php
+            <div class="entry-meta">
+                <?php
 				virtualops_posted_on();
 				virtualops_posted_by();
 				?>
-			</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
-
-	<?php virtualops_post_thumbnail(); ?>
-
-	<div class="entry-content">
-		<?php
+            </div><!-- .entry-meta -->
+            <?php endif; ?>
+        </header><!-- .entry-header -->
+        <div class="entry-content mb-32">
+            <?php
 		the_content(
 			sprintf(
 				wp_kses(
@@ -55,9 +54,23 @@
 			)
 		);
 		?>
-	</div><!-- .entry-content -->
+        </div><!-- .entry-content -->
 
-	<footer class="entry-footer">
-		<?php virtualops_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
+        <footer class="entry-footer mb-32">
+            <?php virtualops_entry_footer(); ?>
+        </footer><!-- .entry-footer -->
+        <div class="related-articles mb-24">
+            <h4>Related Articles:</h4>
+            <ul class="read-blog">
+                <?php
+					$related = get_posts( array( 'category__in' => wp_get_post_categories($post->ID), 'numberposts' => 5, 'post__not_in' => array($post->ID) ) );
+					if( $related ) foreach( $related as $post ) {
+					setup_postdata($post); ?>
+                <li><a href="<?php the_permalink() ?>" rel="bookmark"
+                        title="<?php the_title(); ?>"><?php the_title(); ?></a></li>
+                <?php }
+					wp_reset_postdata(); ?>
+            </ul>
+        </div>
+    </div>
 </article><!-- #post-<?php the_ID(); ?> -->

@@ -17,7 +17,7 @@ get_header();
 
 <main id="primary" class="site-main">
 
-    <section class="section section--blog pt-32">
+    <section class="section section--blog">
         <div class="wrap">
             <div class="row">
 
@@ -25,7 +25,7 @@ get_header();
                         /* Start the Loop */
                         while ( have_posts() ) :
                             the_post(); ?>
-                <div class="col-4 col-md-6 col-sm-12">
+                <div class="col-4 col-md-6 col-sm-12 mb-32">
                     <?php get_template_part( 'template-parts/content', 'excerpt'); ?>
                 </div>
                 <?php
