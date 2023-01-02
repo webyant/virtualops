@@ -1431,16 +1431,13 @@ select.form-control {
 
 .comment-form {
     position: relative;
-}
-
-.comment-form .form-submit input {
-    margin: 0;
-    padding: 8px 12px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -2%;
 }
 
 .comment-reply-title {
-    margin-bottom: 8px;
-    font-size: 14px;
+    margin-bottom: 24px;
 }
 
 .must-log-in {
@@ -1454,7 +1451,9 @@ select.form-control {
 }
 
 .comment-form p {
-    margin-bottom: 0;
+    margin: 0 2% 8px;
+    flex: 0 0 96%;
+    max-width: 96%;
 }
 
 .comment-form .comment-form-cookies-consent {
@@ -1477,16 +1476,44 @@ select.form-control {
 }
 
 .comment-form .comment-notes,
-.comment-form p label,
 .comment-form .logged-in-as,
 .comment-form .comment-form-url {
     display: none;
 }
 
+.comment-form #comment,
+.comment-form #author,
+.comment-form #email {
+    border: 1px solid #ddd;
+    width: 100%;
+    padding: 8px 16px;
+    outline: none;
+}
+
+.comment-form .form-submit,
+.comment-form .comment-form-cookies-consent,
+.comment-form .comment-form-comment {
+    flex: 0 0 96%;
+    max-width: 96%;
+}
+
+.comment-form .comment-form-author,
+.comment-form .comment-form-email {
+    flex: 0 0 46%;
+    max-width: 46%;
+}
+
+.comment-form #comment:focus,
+.comment-form #author:focus,
+.comment-form #email:focus {
+    border-color: var(--heading-font-color);
+    outline: none;
+}
+
 .comment-form #comment {
     max-width: 100%;
     min-width: 100%;
-    height: 55px;
+    height: 80px;
 }
 
 
@@ -3054,6 +3081,19 @@ select.form-control {
 
 .section--blog {
     padding-top: 160px;
+}
+
+.post-thumbnail img {
+    display: block;
+    margin: 0 auto;
+}
+
+.post-thumbnail+.wrap {
+    margin-top: 48px;
+}
+
+.wrap-840 {
+    max-width: 840px;
 }
 
 

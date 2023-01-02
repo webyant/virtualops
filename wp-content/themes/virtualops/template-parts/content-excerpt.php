@@ -8,7 +8,7 @@
  */
 
 ?>
-<article id="post-<?php the_ID(); ?>" class="blog__card mb-24">
+<article id="post-<?php the_ID(); ?>" class="blog__card">
     <div class="mb-24"><?php virtualops_post_thumbnail(); ?></div>
     <?php the_title( sprintf( '<h2 class="mb-4 h3"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
     <div class="post-meta mb-8"><span>
