@@ -181,20 +181,20 @@ get_header();
             <div class="row">
                 <div class="col-6 col-md-12">
                     <div class="experience__info ">
-                        <h2 class="wow bounceInUp text-orange" data-wow-duration="0.5s">Rich product data on your
-                            eCommerce website means better user experience</h2>
-                        <p class="wow bounceInUp" data-wow-duration="1s">According to Salsify <strong
-                                class="highlighted">“88% of the shoppers characterize detailed product content as being
-                                extremely important to their purchasing decision.”</strong></p>
-                        <p>According to a Survey by Retail Dive “87% of consumers said they are unlikely or very
-                            unlikely to make a repeat purchase with a Retailer that provided inaccurate product
-                            information. 40% of consumers have returned an online
-                            purchase in past year specifically because of poor product content.”</p>
+                        <?php if( get_field('experience_heading') ): ?>
+                            <h2 class="wow bounceInUp text-orange" data-wow-duration="0.5s"><?php the_field('experience_heading'); ?></h2>
+                        <?php endif; ?>
+                        <div class="wow bounceInUp" data-wow-duration="1s">
+                        <?php if( get_field('experience_description') ): ?>
+                            <?php the_field('experience_description'); ?>
+                        <?php endif; ?>
+                        </div>  
                     </div>
                 </div>
                 <div class="col-6 col-md-12">
-                    <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/better-website.png"
-                        alt="succeed">
+                    <?php  if( get_field('experience_img') ) { ?>
+                        <?php echo wp_get_attachment_image( get_field('experience_img'), 'full' );  ?>
+                    <?php } ?>
                 </div>
             </div>
         </div>
