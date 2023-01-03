@@ -9,7 +9,8 @@
 
 ?>
 
-<section class="section inner--banner" <?php if( get_field('banner_background') ): ?>
+<section class="section inner--banner <?php echo 'page--'. get_post_field( 'post_name', get_post()); ?>"
+    <?php if( get_field('banner_background') ): ?>
     style="background-image:url(<?php the_field('banner_background'); ?>)" <?php endif; ?>>
     <div class="wrap">
         <div class="row no-guttor row--items-center">

@@ -40,12 +40,13 @@
                 <h5>Contact Us</h5>
                 <div class="row">
                     <div class="col-6 col-sm-6 col-xxs-12">
-                        <p><strong>US Address:</strong> <br>115 W 29th St #908, New York, NY 10001</p>
+                        <p><strong>US Address:</strong> <br>115 W 29th St #908, New York, <br>NY 10001</p>
                         <p>Phone: +91 9099002391</p>
                         <p>Email: info@virtualops.net</p>
                     </div>
                     <div class="col-6 col-sm-6 col-xxs-12">
-                        <p><strong>India Address:</strong> <br>B-302, Titanium City Center, 100 Feet Road, Anandnagar,
+                        <p><strong>India Address:</strong> <br>B-302, Titanium City Center, <br>100 Feet Road,
+                            Anandnagar, <br>
                             Ahmedabad – 380015</p>
 
                     </div>
@@ -54,7 +55,8 @@
         </div>
         <div class="footer__bottom">
             <div class="site-info">
-                &copy; 2022. Virtual Ops, LLP. All rights reserved.
+                &copy; <?php echo date("Y"); ?>
+                . Virtual Ops, LLP. All rights reserved.
             </div>
             <ul class="social__links">
                 <li>

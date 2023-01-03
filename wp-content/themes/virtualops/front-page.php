@@ -24,62 +24,51 @@ get_header();
     <?php endif; ?>
     <section class="section section--motivation">
         <div class="wrap">
+            <?php if( get_field('services_main_heading') ): ?>
+            <div class="succeed__heading text-center">
+                <h2 class="text-orange h1"><?php the_field('services_main_heading'); ?></h2>
+            </div>
+            <?php endif; ?>
             <div class="row row--items-center">
                 <div class="col-7 col-md-12">
                     <div class="row row--items-center">
                         <div class="col-6 col-md-6 col-sm-12">
+                            <?php $srinfo = get_field('product_content'); ?>
+                            <?php if( $srinfo ): ?>
                             <div class="motivation__card wow bounceInUp" data-wow-duration="1s">
-                                <?php  if( get_field('product_content_icon') ) { ?>
-                                <?php echo wp_get_attachment_image( get_field('product_content_icon'), 'full' );  ?>
-                                <?php } ?>
-                                <?php if( get_field('product_content_heading') ): ?>
-                                <h3><?php the_field('product_content_heading'); ?></h3>
-                                <?php endif; ?>
-                                <?php if( get_field('product_content_description') ): ?>
-                                <p><?php the_field('product_content_description'); ?></p>
-                                <?php endif; ?>
-                                <?php if( get_field('product_content_button_link') ): ?>
-                                <a href="<?php the_field('product_content_button_link'); ?>"
-                                    class="btn-text"><?php the_field('product_content_button_text'); ?></a>
-                                <?php endif; ?>
+                                <?php echo wp_get_attachment_image( $srinfo['icon'], 'full' );  ?>
+                                <h3><?php echo $srinfo['heading']; ?></h3>
+                                <p><?php echo $srinfo['description']; ?></p>
+                                <a href="<?php echo $srinfo['link']; ?>" class="btn-text">Learn
+                                    more</a>
                             </div>
+                            <?php endif; ?>
+                            <?php $srinfo1 = get_field('product_data_management'); ?>
+                            <?php if( $srinfo1 ): ?>
                             <div class="motivation__card wow bounceInUp" data-wow-duration="1.5s">
-                                <?php  if( get_field('product_data_management_icon') ) { ?>
-                                <?php echo wp_get_attachment_image( get_field('product_data_management_icon'), 'full' );  ?>
-                                <?php } ?>
-                                <?php if( get_field('product_data_management_heading') ): ?>
-                                <h3><?php the_field('product_data_management_heading'); ?></h3>
-                                <?php endif; ?>
-                                <?php if( get_field('product_data_management_description') ): ?>
-                                <p><?php the_field('product_data_management_description'); ?></p>
-                                <?php endif; ?>
-                                <?php if( get_field('product_data_management_button_link') ): ?>
-                                <a href="<?php the_field('product_data_management_button_link'); ?>"
-                                    class="btn-text"><?php the_field('product_data_management_button_text'); ?></a>
-                                <?php endif; ?>
+                                <?php echo wp_get_attachment_image( $srinfo1['icon'], 'full' );  ?>
+                                <h3><?php echo $srinfo1['heading']; ?></h3>
+                                <p><?php echo $srinfo1['description']; ?></p>
+                                <a href="<?php echo $srinfo1['link']; ?>" class="btn-text">Learn
+                                    more</a>
                             </div>
+                            <?php endif; ?>
                             <div class="motivation__dots">
-                                <?php  if( get_field('motivation_img') ) { ?>
-                                <?php echo wp_get_attachment_image( get_field('motivation_img'), 'full' );  ?>
-                                <?php } ?>
+                                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/dot-bg.png"
+                                    alt="Dotts">
                             </div>
                         </div>
                         <div class="col-6 col-md-6 col-sm-12">
+                            <?php $srinfo2 = get_field('digital_asset_management'); ?>
+                            <?php if( $srinfo2 ): ?>
                             <div class="motivation__card wow bounceInUp" data-wow-duration="2.0s">
-                                <?php  if( get_field('digital_asset_management_icon') ) { ?>
-                                <?php echo wp_get_attachment_image( get_field('digital_asset_management_icon'), 'full' );  ?>
-                                <?php } ?>
-                                <?php if( get_field('digital_asset_management_heading') ): ?>
-                                <h3><?php the_field('digital_asset_management_heading'); ?></h3>
-                                <?php endif; ?>
-                                <?php if( get_field('digital_asset_management_description') ): ?>
-                                <p><?php the_field('digital_asset_management_description'); ?></p>
-                                <?php endif; ?>
-                                <?php if( get_field('digital_asset_management_button_link') ): ?>
-                                <a href="<?php the_field('digital_asset_management_button_link'); ?>"
-                                    class="btn-text"><?php the_field('digital_asset_management_button_text'); ?></a>
-                                <?php endif; ?>
+                                <?php echo wp_get_attachment_image( $srinfo2['icon'], 'full' );  ?>
+                                <h3><?php echo $srinfo2['heading']; ?></h3>
+                                <p><?php echo $srinfo2['description']; ?></p>
+                                <a href="<?php echo $srinfo2['link']; ?>" class="btn-text">Learn
+                                    more</a>
                             </div>
+                            <?php endif; ?>
                         </div>
                     </div>
                 </div>
@@ -101,99 +90,50 @@ get_header();
     <section class="section section--succeed pb-0">
         <div class="wrap">
             <div class="succeed__heading text-center">
-                <?php if( get_field('succeed_heading') ): ?>
-                    <h2 class="text-orange dots__title" data-wow-duration="0.5s"><?php the_field('succeed_heading'); ?></h2>
+                <?php if( get_field('collaborateoptimizeaccelerate_heading') ): ?>
+                <h2 class="text-orange dots__title">
+                    <?php the_field('collaborateoptimizeaccelerate_heading'); ?>
+                </h2>
                 <?php endif; ?>
-                <?php if( get_field('succeed_description') ): ?>
-                    <p class="font-md"><?php the_field('succeed_description'); ?></p>
+                <?php if( get_field('collaborateoptimizeaccelerate_description') ): ?>
+                <p class="font-md"><?php the_field('collaborateoptimizeaccelerate_description'); ?></p>
                 <?php endif; ?>
             </div>
             <div class="row mt-32">
+                <?php if( have_rows('slider_images') ): ?>
                 <div class="col-6 col-md-12">
                     <div class="marketing__img">
-                        <?php  if( get_field('phone_frame_img') ) { ?>
-                            <?php echo wp_get_attachment_image( get_field('phone_frame_img'), 'full' );  ?>
-                        <?php } ?>
+                        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/phone-frame.png"
+                            alt="phone">
                         <div class="marketing__slider">
+                            <?php while( have_rows('slider_images') ): the_row();  ?>
                             <div class="marketing__images">
-                                <?php  if( get_field('marketing_slider') ) { ?>
-                                    <?php echo wp_get_attachment_image( get_field('marketing_slider'), 'full' );  ?>
-                                <?php } ?>
+                                <?php echo wp_get_attachment_image( get_sub_field('image'), 'full' ); ?>
                             </div>
-                            <div class="marketing__images">
-                                <?php  if( get_field('marketing_slider1') ) { ?>
-                                    <?php echo wp_get_attachment_image( get_field('marketing_slider1'), 'full' );  ?>
-                                <?php } ?>
-                            </div>
-                            <div class="marketing__images">
-                                <?php  if( get_field('marketing_slider2') ) { ?>
-                                    <?php echo wp_get_attachment_image( get_field('marketing_slider2'), 'full' );  ?>
-                                <?php } ?>
-                            </div>
-                            <div class="marketing__images">
-                                <?php  if( get_field('marketing_slider3') ) { ?>
-                                    <?php echo wp_get_attachment_image( get_field('marketing_slider3'), 'full' );  ?>
-                                <?php } ?>
-                            </div>
-                            <div class="marketing__images">
-                                <?php  if( get_field('marketing_slider4') ) { ?>
-                                    <?php echo wp_get_attachment_image( get_field('marketing_slider4'), 'full' );  ?>
-                                <?php } ?>
-                            </div>
-                            <div class="marketing__images">
-                                <?php  if( get_field('marketing_slider5') ) { ?>
-                                    <?php echo wp_get_attachment_image( get_field('marketing_slider5'), 'full' );  ?>
-                                <?php } ?>
-                            </div>
-                            <div class="marketing__images">
-                                <?php  if( get_field('marketing_slider6') ) { ?>
-                                    <?php echo wp_get_attachment_image( get_field('marketing_slider6'), 'full' );  ?>
-                                <?php } ?>
-                            </div>
-                            <div class="marketing__images">
-                                <?php  if( get_field('marketing_slider7') ) { ?>
-                                    <?php echo wp_get_attachment_image( get_field('marketing_slider7'), 'full' );  ?>
-                                <?php } ?>
-                            </div>
+                            <?php endwhile; ?>
                         </div>
                     </div>
                 </div>
+                <?php endif; ?>
                 <div class="col-6 col-md-12">
-                    <?php if( get_field('succeed_right_heading') ): ?>
-                        <h3 class="mb-40" data-wow-duration="0.5s"><?php the_field('succeed_right_heading'); ?></h3>
+                    <?php if( get_field('banefit_heading') ): ?>
+                    <h3 class="mb-40"><?php the_field('banefit_heading'); ?></h3>
                     <?php endif; ?>
                     <div class="succeed--content mt-24">
                         <div class="content__img wow bounceInUp">
-                            <?php  if( get_field('line_img') ) { ?>
-                                <?php echo wp_get_attachment_image( get_field('line_img'), 'full' );  ?>
-                            <?php } ?>
+                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/line.jpg"
+                                alt="line">
                         </div>
+                        <?php if( have_rows('benifits') ): ?>
                         <div class="content--info">
+                            <?php while( have_rows('benifits') ): the_row();  ?>
                             <div class="info__text wow bounceInUp" data-wow-duration="1s">
-                                <?php if( get_field('improve_heading') ): ?>
-                                    <h4><?php the_field('improve_heading'); ?></h4>
-                                <?php endif; ?>
-                                <?php if( get_field('improve_content') ): ?>
-                                    <p><?php the_field('improve_content'); ?></p>
-                                <?php endif; ?>
+                                <h4><?php the_sub_field('title'); ?></h4>
+                                <p><?php the_sub_field('description'); ?></p>
                             </div>
-                            <div class="info__text wow bounceInUp" data-wow-duration="1.5s">
-                                <?php if( get_field('reduce_heading') ): ?>
-                                    <h4><?php the_field('reduce_heading'); ?></h4>
-                                <?php endif; ?>
-                                <?php if( get_field('reduce_content') ): ?>
-                                    <p><?php the_field('reduce_content'); ?></p>
-                                <?php endif; ?>
-                            </div>
-                            <div class="info__text wow bounceInUp" data-wow-duration="2s">
-                                <?php if( get_field('enhance_heading') ): ?>
-                                    <h4><?php the_field('enhance_heading'); ?></h4>
-                                <?php endif; ?>
-                                <?php if( get_field('enhance_content') ): ?>
-                                    <p><?php the_field('enhance_content'); ?></p>
-                                <?php endif; ?>
-                            </div>
+                            <?php endwhile; ?>
                         </div>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
@@ -205,23 +145,25 @@ get_header();
                 <div class="col-6 col-md-12">
                     <div class="experience__info ">
                         <?php if( get_field('experience_heading') ): ?>
-                            <h2 class="wow bounceInUp text-orange" data-wow-duration="0.5s"><?php the_field('experience_heading'); ?></h2>
+                        <h2 class="wow bounceInUp text-orange" data-wow-duration="0.5s">
+                            <?php the_field('experience_heading'); ?></h2>
                         <?php endif; ?>
                         <div class="wow bounceInUp" data-wow-duration="1s">
-                        <?php if( get_field('experience_description') ): ?>
+                            <?php if( get_field('experience_description') ): ?>
                             <?php the_field('experience_description'); ?>
-                        <?php endif; ?>
-                        </div>  
+                            <?php endif; ?>
+                        </div>
                     </div>
                 </div>
                 <div class="col-6 col-md-12">
                     <?php  if( get_field('experience_img') ) { ?>
-                        <?php echo wp_get_attachment_image( get_field('experience_img'), 'full' );  ?>
+                    <?php echo wp_get_attachment_image( get_field('experience_img'), 'full' );  ?>
                     <?php } ?>
                 </div>
             </div>
         </div>
     </section>
+    <?php if( have_rows('why_choose') ): ?>
     <section class="section section--why pt-0">
         <div class="wrap">
             <?php if( get_field('choose_us_heading') ): ?>
@@ -230,78 +172,44 @@ get_header();
             </div>
             <?php endif; ?>
             <div class="why__content mt-48">
+                <?php while( have_rows('why_choose') ): the_row();  ?>
                 <div class="why__block text-center">
-                    <?php  if( get_field('why_block_img1') ) { ?>
-                        <?php echo wp_get_attachment_image( get_field('why_block_img1'), 'full' );  ?>
-                    <?php } ?>
-                    <?php if( get_field('why_block_heading1') ): ?>
-                        <h4><?php the_field('why_block_heading1'); ?></h4>
-                    <?php endif; ?>
+                    <?php echo wp_get_attachment_image( get_sub_field('icon'), 'full' );  ?>
+                    <h4><?php the_sub_field('title'); ?></h4>
                 </div>
-                <div class="why__block text-center">
-                    <?php  if( get_field('why_block_img2') ) { ?>
-                        <?php echo wp_get_attachment_image( get_field('why_block_img2'), 'full' );  ?>
-                    <?php } ?>
-                    <?php if( get_field('why_block_heading2') ): ?>
-                        <h4><?php the_field('why_block_heading2'); ?></h4>
-                    <?php endif; ?>
-                </div>
-                <div class="why__block text-center">
-                    <?php  if( get_field('why_block_img3') ) { ?>
-                        <?php echo wp_get_attachment_image( get_field('why_block_img3'), 'full' );  ?>
-                    <?php } ?>
-                    <?php if( get_field('why_block_heading3') ): ?>
-                        <h4><?php the_field('why_block_heading3'); ?></h4>
-                    <?php endif; ?>
-                </div>
-                <div class="why__block text-center">
-                    <?php  if( get_field('why_block_img4') ) { ?>
-                        <?php echo wp_get_attachment_image( get_field('why_block_img4'), 'full' );  ?>
-                    <?php } ?>
-                    <?php if( get_field('why_block_heading4') ): ?>
-                        <h4><?php the_field('why_block_heading4'); ?></h4>
-                    <?php endif; ?>
-                </div>
-                <div class="why__block text-center">
-                    <?php  if( get_field('why_block_img5') ) { ?>
-                        <?php echo wp_get_attachment_image( get_field('why_block_img5'), 'full' );  ?>
-                    <?php } ?>
-                    <?php if( get_field('why_block_heading5') ): ?>
-                        <h4><?php the_field('why_block_heading5'); ?></h4>
-                    <?php endif; ?>
-                </div>
+                <?php endwhile; ?>
             </div>
         </div>
     </section>
+    <?php endif; ?>
+    <?php
+    $your_query = new WP_Query(array( 'page_id' => 14 ));
+    while ( $your_query->have_posts() ) : $your_query->the_post();
+    if( have_rows('testimonials') ): ?>
     <section class="section section--advertising">
         <div class="wrap">
-            <?php if( get_field('testimonials_heading') ): ?>
-                <h2 class="mb-48 wow bounceInUp text-orange"><?php the_field('testimonials_heading'); ?></h2>
-            <?php endif; ?>
-            <?php if( have_rows('testimonials_info') ): ?>
             <div class="slider">
-                <?php while( have_rows('testimonials_info') ): the_row(); ?>
+                <?php while( have_rows('testimonials') ): the_row();  ?>
                 <div class="advertising__slider">
                     <blockquote>
-                        <p><?php the_sub_field('testimonials_content'); ?></p>
+                        <?php the_sub_field('testimonial_content'); ?>
                     </blockquote>
                     <div class="testimonial-title">
-                        <h3><?php the_sub_field('testimonials_title'); ?></h3>
-                        <p><?php the_sub_field('testimonials_text'); ?></p>
-                        <?php echo wp_get_attachment_image( get_sub_field('testimonials_img'), 'full' ); ?>
+                        <h3><?php the_sub_field('name'); ?></h3>
+                        <p><?php the_sub_field('designation'); ?></p>
+                        <?php echo wp_get_attachment_image( get_sub_field('logo'), 'full' );  ?>
                     </div>
                 </div>
                 <?php endwhile; ?>
             </div>
-            <?php endif; ?>    
             <img class="doots" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/dot-bg.png"
                 alt="Doots">
-            <?php  if( get_field('doots') ) { ?>
-                    <?php echo wp_get_attachment_image( get_field('doots'), 'full' );  ?>
-            <?php } ?>
         </div>
     </section>
-
+    <?php endif;
+    endwhile;
+    wp_reset_postdata();
+    ?>
 </main><!-- #main -->
 
 <?php
