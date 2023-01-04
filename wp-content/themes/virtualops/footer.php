@@ -19,13 +19,13 @@
             <a href="<?php echo get_permalink(16); ?>" class="btn">Get In Touch</a>
         </div>
         <div class="row top-row">
-            <div class="col-3 col-sm-6 col-xxs-12">
+            <div class="col-3 col-md-6 col-xxs-12">
                 <h5>Let’s Get in Touch</h5>
                 <p class="mb-32">We are excited to hear from you about your Product Data enhancement opportunities. Even
                     if it is just a few questions and ideas to share, please reach out to us. We will be happy to
                     connect with you.</p>
             </div>
-            <div class="col-3 col-sm-6 col-xxs-12">
+            <div class="col-3 col-md-6 col-xxs-12">
                 <h5>Important Links</h5>
                 <?php
 						wp_nav_menu(
@@ -38,7 +38,7 @@
 					?>
 
             </div>
-            <div class="col-6 col-sm-12 col-xxs-12 mt-16">
+            <div class="col-6 col-md-12 col-xxs-12 mt-16">
                 <h5>Contact Us</h5>
                 <div class="row">
                     <div class="col-6 col-sm-6 col-xxs-12">

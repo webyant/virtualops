@@ -16,7 +16,7 @@ get_header();
 ?>
 <main id="primary" class="site-main">
     <?php if( get_field('banner_video') ): ?>
-    <section class="section section--banner video--banner">
+    <section class="section section--video">
         <video autoplay="" muted="" loop="" playsinline="" id="desktop">
             <source src="<?php the_field('banner_video'); ?>" type="video/mp4">
         </video>
@@ -25,7 +25,7 @@ get_header();
     <section class="section section--motivation">
         <div class="wrap">
             <?php if( get_field('services_main_heading') ): ?>
-            <div class="succeed__heading text-center">
+            <div class="section__title text-center">
                 <h2 class="text-orange h1"><?php the_field('services_main_heading'); ?></h2>
             </div>
             <?php endif; ?>
@@ -89,7 +89,7 @@ get_header();
     </section>
     <section class="section section--succeed pb-0">
         <div class="wrap">
-            <div class="succeed__heading text-center">
+            <div class="section__title text-center">
                 <?php if( get_field('collaborateoptimizeaccelerate_heading') ): ?>
                 <h2 class="text-orange dots__title">
                     <?php the_field('collaborateoptimizeaccelerate_heading'); ?>

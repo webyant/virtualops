@@ -81,12 +81,12 @@ get_header();
     <section class="google-map">
         <div class="row no-guttor">
             <?php if( get_field('us_map') ): ?>
-            <div class="col-6">
+            <div class="col-6 col-sm-12">
                 <?php the_field('us_map'); ?>
             </div>
             <?php endif; ?>
             <?php if( get_field('india_map') ): ?>
-            <div class="col-6">
+            <div class="col-6 col-sm-12">
                 <?php the_field('india_map'); ?>
             </div>
             <?php endif; ?>
